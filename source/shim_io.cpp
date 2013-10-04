@@ -1,6 +1,6 @@
 #include "shim_io.h"
 #include <thread>
-#include <iostream>
+#include <iterator>
 
 #ifdef _WIN32
 #include <fcntl.h>
@@ -77,7 +77,6 @@ void shim_io::process_output() {
 		if ( !_is_good ) {
 			break;
 		}
-
 		fwrite( _output_buffer.data(), sizeof( uint8_t ), _output_buffer.size(), stdout );
 		_output_buffer.clear();
 	}
