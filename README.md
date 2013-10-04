@@ -1,4 +1,4 @@
-standard_io
+shim-io
 ===========
 
-Input/Output using the standard streams
+input/output using the standard streams
