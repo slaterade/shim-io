@@ -11,7 +11,7 @@ public:
 	void shutdown();
 	void read( std::vector<uint8_t>& dest_buffer );
 	void write( std::vector<uint8_t>&& source_buffer );
-	//void write( const std::vector<uint8_t>& source_buffer );
+	void write( const std::vector<uint8_t>& source_buffer );
 
 private:
 	void process_input();
